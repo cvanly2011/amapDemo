@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+spring:
+  aop:
+    auto: true
+    proxy-target-class: true #采用CGLIB来实现AOP false为标准JAVA实现
+  thymeleaf:
+    cache: false
+    prefix: classpath:/views/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html
